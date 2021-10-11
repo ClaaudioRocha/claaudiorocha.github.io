@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+ :root {
+    --bs-green: #198754;
+    --bs-teal: #00FFBB;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-secondary: #6c757d;
+    --bs-info: #0dcaf0;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Athiti', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--bs-dark);
+}
+
+
+/* ---- config gerais ---- */
+
+.container {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+
+/* ---- Menu Logo ---- */
+
+.menu-logo h1 {
+    color: var(--bs-light);
+    font-size: 2rem;
+}
+
+.menu-logo {
+    cursor: pointer;
+}
+
+
+/* ---- Menu  ---- */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links a {
+    margin: 30px;
+    text-decoration: none;
+    color: var(--bs-light);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* ---- efeitos <li> e <a>  ---- */
+
+li:hover {
+    transform: scale(1.1);
+    animation: 0s ease 0s 1 normal none running none;
+}
+
+a:hover {
+    color: var(--bs-teal);
+}
+
+
+/* ---- Home  ---- */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    /*     width: 100vh;
+ */
+}
+
+.text-front {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    color: var(--bs-teal);
+}
+
+.content h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 90px;
+    text-align: center;
+    color: var(--bs-light);
+}
+
+
+/* ---- Sobre  ---- */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.sobre-tudo {
+    height: 100vh;
+    background: var(--bs-gray-dark);
+    padding: 120px 0;
+}
+
+.content-sobre {
+    display: flex;
+    align-items: center;
+}
+
+.perfil {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--bs-teal);
+}
+
+.sobre-text {
+    margin-top: 2em;
+    color: var(--bs-light);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+    line-height: 1.625;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.sobre h1 {
+    color: var(--bs-light);
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sobre h4 {
+    padding: 10px 0;
+    width: 800px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 62px;
+    color: var(--bs-light);
+    text-align: justify;
+}
+
+.sobre-nome {
+    color: var(--bs-teal);
+}
+
+.text-sobre2 {
+    margin-left: 50px;
+    align-items: center;
+}
+
+
+/* ---- Botão CV  ---- */
+
+.btn-span {
+    color: var(--bs-white);
+}
+
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: var(--bs-white);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid var(--bs-teal);
+    color: var(--bs-teal);
+    margin: auto;
+}
+
+.btn:hover {
+    color: var(--bs-white);
+}
+
+.btn:hover:after {
+    width: 100%;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bs-teal);
+}
+
+
+/* ---- Sobre  ---- */
+
+.projetos {
+    background-color: var(--bs-dark);
+}
+
+.indisponivel {
+    font-style: normal;
+    margin-top: 2em;
+    color: var(--bs-light);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+    line-height: auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.git-indisponivel {
+    align-content: center;
+size: 1px;
+}
+
+
+.proj-text {
+    padding: 120px 0;
+}
+
+.proj-text h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--bs-light);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.proj-text p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--bs-light);
+}
+
+.line {
+    width: 120px;
+    height: 5px;
+    margin: 30px auto 0;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: var(--bs-gray-dark);
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-gray-dark)), to(var(--bs-teal)));
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-teal)), to(var(--bs-info)));
+    background: -webkit-linear-gradient(left, var(--bs-teal), var(--bs-info));
+    background: linear-gradient(to right, var(--bs-teal), var(--bs-info));
+}
+
+.line-2 {
+    width: 60px;
+    height: 5px;
+    margin: auto;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: var(--bs-gray-dark);
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-gray-dark)), to(var(--bs-teal)));
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-teal)), to(var(--bs-info)));
+    background: -webkit-linear-gradient(left, var(--bs-teal), var(--bs-info));
+    background: linear-gradient(to right, var(--bs-teal), var(--bs-info));
+}
+
+.contato {
+    padding: 120px 0;
+}
+
+.contatos {
+    height: 100vh;
+    background-color: var(--bs-light);
+}
+
+.contato h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--bs-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.contato p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--bs-dark);
+    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+.social-contato {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--bs-dark);
+    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.social-contato a {
+    text-decoration: none;
+    color: var(--bs-dark);
+}
+
+.svg-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    padding: 30px 0 0 45px;
+    align-items: center;
+    padding-bottom: 120px
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.copyright {
+    color: var(--bs-light);
+}
+
+.copy {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
