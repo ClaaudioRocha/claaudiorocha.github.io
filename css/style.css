@@ -236,22 +236,14 @@ a:hover {
     background-color: var(--bs-dark);
 }
 
-.indisponivel {
-    font-style: normal;
-    margin-top: 2em;
-    color: var(--bs-light);
-    max-width: 700px;
+.github {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.25rem;
-    line-height: auto;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.git-indisponivel {
-    align-content: center;
-size: 1px;
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
 
 
